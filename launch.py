@@ -14,6 +14,16 @@ if not os.path.exists(KEYS) or not os.path.isdir(KEYS):
 steamcmd = ["/steamcmd/steamcmd.sh"]
 steamcmd.extend(["+login", os.environ["STEAM_USER"], os.environ["STEAM_PASSWORD"]])
 steamcmd.extend(["+force_install_dir", "/arma3"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_1"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_2"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_3"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_4"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_5"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_6"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_7"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_8"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_9"])
+steamcmd.extend(["+workshop_download_item", "107410"],os.environ["MOD_ID_10"])
 steamcmd.extend(["+app_update", "233780"])
 if "STEAM_BRANCH" in os.environ and len(os.environ["STEAM_BRANCH"]) > 0:
     steamcmd.extend(["-beta", os.environ["STEAM_BRANCH"]])
